@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+transformers
+torch
+pydantic
+pydantic-settings
+python-multipart
+spacy
