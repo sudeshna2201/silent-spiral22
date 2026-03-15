@@ -3,7 +3,5 @@ uvicorn
 sqlalchemy
 transformers
 torch
-pydantic
-pydantic-settings
-python-multipart
+pydantic<2.0.0
 spacy
