@@ -27,34 +27,6 @@ We built a decoupled, modern architecture to separate our UI rendering from our 
 - **AI/NLP Layer:** Integrated HuggingFace transformer models and Spacy for live, sub-second sentiment analysis and keyword extraction.
 - **Database:** SQLAlchemy ORM managing SQLite for lightweight, structure data storage.
 
-## ⚙️ Local Setup Instructions
-
-### 1. Clone the repository
-\`\`\`bash
-git clone https://github.com/sudeshna2201/silent-spiral22.git
-cd silent-spiral22
-\`\`\`
-
-### 2. Start the FastAPI Backend
-\`\`\`bash
-cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-uvicorn main:app --reload
-\`\`\`
-*The API will be available at http://localhost:8000*
-
-### 3. Start the React Frontend
-Open a new terminal window:
-\`\`\`bash
-cd frontend
-npm install
-npm run dev
-\`\`\`
-*The web app will be available at http://localhost:5173*
-
 ## 🔮 Future Roadmap
 1. **End-to-End Encryption / Local Storage:** Ensuring user journal entries remain 100% private and inaccessible to anyone except the user.
 2. **LLM Insights:** Upgrading our NLP pipeline to a local LLM to generate weekly summary paragraphs of emotional growth.
